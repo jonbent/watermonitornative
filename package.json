@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "workspace-root",
+  "version": "1.0.0",
+  "proxy": "http://localhost:5000",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "ios": "yarn workspace workspace-app ios",
+    "android": "yarn workspace workspace-app android",
+    "app:start": "yarn workspace workspace-app start",
+    "web": "yarn workspace workspace-web start",
+    "build": "yarn workspace workspace-common build"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "dependencies": {
+    "get-yarn-workspaces": "^1.0.2"
+  }
+}
